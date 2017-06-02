@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Game Challenge</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <style type="text/css">
+    .hide {
+      display: none;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 700px;margin: 0 auto;">
+    <h1 style="margin-bottom:5px">Get your hockey on!</h1>
+    <div style="margin: 0 auto;text-align:center">
+      <button id="reset">RESET</button><br>
+      NUMBER OF RESETS: <span id="num_resets">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="left">
+      <h2>
+        Penguins
+      </h2>
+      <div class="hits">
+        SHOTS TAKEN: <span id="teamone_numshots">0</span><br>
+        GOALS: <span id="teamone_numhits">0</span>
+      </div>
+      <div>
+        <button id="teamone_shoot">SHOOT</button>
+      </div>
+    </div>
+    <div class="right">
+      <h2>
+        Rangers
+      </h2>
+      <div class="hits">
+        SHOTS TAKEN: <span id="teamtwo_numshots">0</span><br>
+        GOALS: <span id="teamtwo_numhits">0</span>
+      </div>
+      <div>
+        <button id="teamtwo_shoot">SHOOT</button>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <script src="javascripts/game.js"></script>
+</body>
+</html>
